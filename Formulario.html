@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div id="formulario">
+        <div class="titulo">
+            <h1 id="titulo">Cadastro de usuários</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+        <form method="POST" action = "cadastro.html">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="campo">
+                    <label><strong>CPF:</strong></label>
+                    <input type="text" name="cpf" id="cpf" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Data de Nascimento:</strong></label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Celular:</strong></label>
+                    <input type="text" name="celular" id="celular" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Email:</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </fieldset>
+    
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>CEP:</strong></label>
+                    <input type="text" name="cep" id="cep">
+                </div>
+                <div class="campo">
+                    <label><strong>Endereço:</strong></label>
+                    <input type="text" name="endereço" id="endereço" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Bairro:</strong></label>
+                    <input type="text" name="bairro" id="bairro" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Cidade:</strong></label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+                <div class="campo">
+                    <label><strong>UF:</strong></label>
+                    <select name="UF" id="UF">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="al">AL</option>
+                        <option value="ms">MS</option>
+                        <option value="sp">SP</option>
+                        <option value="sc">SC</option>
+                    </select>
+                </div>
+            </fieldset>
+    
+            <fieldset id="check">
+                <Label><strong>Selecione os assuntos que gostaria de receber:</strong><br></Label>
+                <input type="checkbox" id="assunto1" name="assunto1" value="Tecnologia">
+                <label for="assunto1">Tecnologia</label>
+                <input type="checkbox" id="assunto2" name="assunto2" value="Esportes">
+                <label for="assunto2">Esportes</label>
+                <input type="checkbox" id="assunto3" name="assunto3" value="Automoveis">
+                <label for="assunto3">Automoveis</label>
+                <input type="checkbox" id="assunto4" name="assunto4" value="Culinaria">
+                <label for="assunto4">Culinaria</label>
+                <input type="checkbox" id="assunto5" name="assunto5" value="Politica">
+                <label for="assunto5">Politica</label>
+                <input type="checkbox" id="assunto7" name="assunto7" value="Policial">
+                <label for="assunto7">Policial</label>
+                <input type="checkbox" id="assunto6" name="assunto6" value="Tempo">
+                <label for="assunto6">Tempo</label>
+                <br>
+                <input type="checkbox" id="assunto8" name="assunto8" value="Cultura">
+                <label for="assunto8">Cultura</label>
+                <input type="checkbox" id="assunto9" name="assunto9" value="Economia">
+                <label for="assunto9">Economia</label>
+                <input type="checkbox" id="assunto10" name="assunto10" value="Jogos">
+                <label for="assunto10">Jogos</label>
+                <input type="checkbox" id="assunto11" name="assunto11" value="Educação">
+                <label for="assunto11">Educação</label>
+                <input type="checkbox" id="assunto12" name="assunto12" value="Viagem">
+                <label for="assunto12">Viagem</label>
+                <input type="checkbox" id="assunto13" name="assunto13" value="Empregos">
+                <label for="assunto13">Empregos</label>
+                <input type="checkbox" id="assunto14" name="assunto14" value="Moda e Estilo">
+                <label for="assunto14">Moda e Estilo</label>
+              
+            </fieldset>
+    
+            <fieldset class="grupo">
+                <div class="campo">
+
+                    <label><strong>Login:</strong></label>
+                    <input type="text" name="login" id="login" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Senha:</strong></label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                
+            </fieldset>
+    
+            <div id="termos">
+                <input type="checkbox" id="termos" name="termos" value="termos" required>
+                <label for="termos">Li as regras de cadastro e autorizo a criação do usuário</label>
+            </div>
+
+            <div id="button"> 
+                <button type="submit" class="botao"><strong>Confirmar</strong></button>
+            </div>
+
+            <p class="footer">©Copyright 2023. Todos os direitos reservados.</p>
+                
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>
